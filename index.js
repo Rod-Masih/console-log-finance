@@ -90,13 +90,12 @@ var finances = [
 var totalMonths = finances.length;
 
 // Log the total number of months
-console.log("Total number of months included in the dataset: " + totalMonths);
+// console.log("Total number of months included in the dataset: " + totalMonths);
 
 var netTotal = 0;
 for (var i = 0; i < finances.length; i++) {
   netTotal += finances[i][1];
 }
-console.log("Net total amount of Profit/Losses; $" + netTotal);
 
 // Calculate the average of changes in Profit/Losses
 var totalChanges = 0;
@@ -109,7 +108,12 @@ var averageChange = totalChanges / (finances.length - 1);
 averageChange = Math.round(averageChange * 100) / 100;
 
 // Log the average of changes in Profit/Losses
-console.log(
-  "Average of changes in Profit/Losses over the entire period: $" +
-    averageChange
-);
+// console.log(
+//   "Average of changes in Profit/Losses over the entire period: $" +
+//     averageChange
+// );
+
+console.log("Financial Analysis");
+console.log("------------------");
+console.log("Total Months: " + totalMonths);
+console.log("Net total amount of Profit/Losses; $" + netTotal);
